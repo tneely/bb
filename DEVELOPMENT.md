@@ -4,6 +4,8 @@
 
 Generally, we expect code to be run from the command line. This boilerplate template uses [Click](https://click.palletsprojects.com) to create easy, composable command line interfaces. From [cli.py](src/cli.py), you can define new CLI arguments and options using the `@click` decorators.
 
+When writing code, you should commit often to source control. This will help you better track and recover your code when needed.
+
 ## Running Code
 
 To run your script simply use `poetry run python your_script.py`. Likewise if you have command line tools such as pytest or black you can run them using `poetry run pytest`.

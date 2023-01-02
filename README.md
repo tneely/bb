@@ -8,6 +8,28 @@ This repository provides boilerplate for computational biology projects. It prov
 
 - Python
 
+## Project Structure
+
+### Data
+
+`bb` is set up to promote healthy data hygiene.
+
+Raw data should be stored in the `./data/raw` directory. This is for things like FASTQ files which contain your raw, unprocessed data.
+
+Intermediate data, such as aligned BAM files, should be stored in `./data/interim`. This is for data you don't care about in the end, but need to compute your final results.
+
+Your final results should be stored in `./data/processed`. This is for things like VCF files: your final output data or the end result of your project.
+
+By default, data is not committed to git. Working with large files under source control can be cumbersome, but if you would like it tracked you can remove the `data/` entry from the top of the [.gitignore](.gitignore) file.
+
+### Code
+
+Code should be divided between exploratory notebooks and production ready pipeline code.
+
+Notebooks are great for exploring your data and prototyping your pipeline. Your notebook code should be kept under the `./notebooks` directory.
+
+Production ready or pipeline code is the for more streamlined processing of your data and should be kept in the `./src` directory.
+
 ## Getting Started
 
 ### Prerequisites
